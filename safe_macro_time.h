@@ -1,3 +1,8 @@
+#ifndef _SAFE_MACRO_TIME_H
+#define _SAFE_MACRO_TIME_H
+#include <time.h>
+#include <assert.h>
+#include <errno.h>
 
 #define SAFE_MSLEEP(msec) \
     do { \
@@ -28,3 +33,4 @@
         assert(rc == 0); \
     } while (0)
 
+#endif
