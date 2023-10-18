@@ -1,2 +1,2 @@
 # liblinuxc
-This library provides basic macros and functions for use in apps
+MEMO, This library provides basic macros and functions for use in apps
