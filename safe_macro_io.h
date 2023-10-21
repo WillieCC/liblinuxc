@@ -97,7 +97,7 @@ static inline int32_t safe_close(int32_t fd)
             break;
         }
             
-        if (errno != EINTR || errno !=EBADF ) {
+        if (errno != EINTR && errno !=EBADF ) {
             fprintf(stderr, "Failed to close fd: %d", fd);
             break;
         }
